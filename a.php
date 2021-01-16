@@ -465,7 +465,7 @@
     </div>
 
 <!-- ACHIEVEMENT -->
-<div id="achiverment" class="container-fluid shadow p-3 mb-5 rounded mt-3 bg-light text-dark">
+<div id="ACHIEVEMENT" class="container-fluid shadow p-3 mb-5 rounded mt-3 bg-dark text-light">
     <div class="container">
         <div class="row px-3">
             <div class="col-md-4 ">
@@ -473,79 +473,79 @@
                     <h2 class="pb-3">ACHIEVEMENT</h2>
                     <div class="i_c"></div>  
                 </div> <br>
-                <?php
-                        ob_start() ;
-                        require 'connect.php';
-                         $sql="SELECT * from achievement where ID='1'";
-    
-                        $result=mysqli_query($conn,$sql);
-                        $data_list=mysqli_fetch_all($result);
-                        foreach($data_list as $data){
-                        echo "<tr>";
-                        echo"<p>$data[3]</p>";
-      
-                        echo"</tr>";
-                        }
-                        ob_flush();
-                        ?>
+                <p>mota</p>
+                
             </div> 
 
             <div class="col-md-8 d-flex flex-column justify-content-center ">
-                <div id="demo" class="carousel slide border container shadow rounded row" data-ride="carousel">
-                    <a class="carousel-control-prev  bg-dark col-2" href="#demo" data-slide="prev">
+                <div id="demo1" class="carousel slide border container shadow rounded row" data-ride="carousel">
+                    <a class="carousel-control-prev  bg-dark col-2" href="#demo1" data-slide="prev">
                         <span class="carousel-control-prev-icon "></span>
+
                     </a>
                     <div class="carousel-inner bg-dark " >
                         <div class="carousel-item active" >
-                            <div class="carousel-caption">
-				            <h1 class="display-2">hight school</h1>
-                            <?php
-                        ob_start() ;
+                        <?php
+                    ob_start() ;
                         require 'connect.php';
-                         $sql="SELECT * from achievement where ID='1'";
+                         $sql="SELECT * from ACHIEVEMENT where ID='1' ";
     
                         $result=mysqli_query($conn,$sql);
                         $data_list=mysqli_fetch_all($result);
                         foreach($data_list as $data){
                         echo "<tr>";
-                        echo"<h2 class=\"m-0\">$data[2]</h2>";
-                      
+                        echo"<p class=\"m-0\">$data[1] <br></p> ";
+                        echo"<p class=\"m-0\">$data[2] <br></p> ";
+                        echo"<p class=\"m-0\">$data[3] <br></p> ";
       
                         echo"</tr>";
                         }
                         ob_flush();
                         ?>
-                              <?php
-                        ob_start() ;
-                        require 'connect.php';
-                         $sql="SELECT * from achievement where ID='1'";
-    
-                        $result=mysqli_query($conn,$sql);
-                        $data_list=mysqli_fetch_all($result);
-                        foreach($data_list as $data){
-                        echo "<tr>";
-                        echo"<p class=\"m-0\">$data[1] </p>";
-                      
-      
-                        echo"</tr>";
-                        }
-                        ob_flush();
-                        ?>
-                          
-				           
-			                </div>
-                           
+                            
                         </div>
                         <div class="carousel-item"> 
-                            <p class="m-0"></p>
+                        <?php
+                    ob_start() ;
+                        require 'connect.php';
+                         $sql="SELECT * from ACHIEVEMENT where ID='1' ";
+    
+                        $result=mysqli_query($conn,$sql);
+                        $data_list=mysqli_fetch_all($result);
+                        foreach($data_list as $data){
+                        echo "<tr>";
+                        echo"<p class=\"m-0\">$data[1] <br></p> ";
+                        echo"<p class=\"m-0\">$data[2] <br></p> ";
+                        echo"<p class=\"m-0\">$data[3] <br></p> ";
+      
+                        echo"</tr>";
+                        }
+                        ob_flush();
+                        ?>
                         </div>
                         <div class="carousel-item">
-                            <p class="m-0"></p>
+                        <?php
+                    ob_start() ;
+                        require 'connect.php';
+                         $sql="SELECT * from ACHIEVEMENT where ID='1' ";
+    
+                        $result=mysqli_query($conn,$sql);
+                        $data_list=mysqli_fetch_all($result);
+                        foreach($data_list as $data){
+                        echo "<tr>";
+                        echo"<p class=\"m-0\">$data[1] <br></p> ";
+                        echo"<p class=\"m-0\">$data[2] <br></p> ";
+                        echo"<p class=\"m-0\">$data[3] <br></p> ";
+      
+                        echo"</tr>";
+                        }
+                        ob_flush();
+                        ?>
                         </div>
                     </div>
 
                     
-                    <a class="carousel-control-next  bg-dark  col-2" href="#demo" data-slide="next">
+                    <a class="carousel-control-next  bg-dark  col-2" href="#demo1" data-slide="next">
                     <span class="carousel-control-next-icon"></span>
                     </a>
 
@@ -1037,7 +1037,7 @@
    
 ?>
  
-  dfdfdfd
+
 
 
  
